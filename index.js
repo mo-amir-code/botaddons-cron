@@ -2,7 +2,7 @@
 
 async function callAPI() {
   try {
-    const response = await fetch('https://botaddons.com/ping');
+    const response = await fetch('https://api.botaddons.com/ping');
     if (!response.ok) {
       throw new Error(`HTTP error! Status: ${response.status}`);
     }
