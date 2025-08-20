@@ -2,16 +2,20 @@
 
 async function callAPI() {
   try {
-    const response = await fetch('https://api.botaddons.com/ping');
+    const response = await fetch("https://api.botaddons.com/ping");
     if (!response.ok) {
       throw new Error(`HTTP error! Status: ${response.status}`);
     }
 
     const data = await response.json();
-    console.log('API called successfully:', data);
+    console.log("API called successfully:", data);
   } catch (error) {
-    console.error('API call failed:', error.message);
+    console.error("API call failed:", error.message);
   }
 }
 
-callAPI();
+const TIME = 1000 * 60 * 4;
+
+setInterval(() => {
+  callAPI();
+}, TIME);

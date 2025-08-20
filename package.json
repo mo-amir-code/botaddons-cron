@@ -1,0 +1,19 @@
+{
+  "name": "botaddons-cron",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mo-amir-code/botaddons-cron.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mo-amir-code/botaddons-cron/issues"
+  },
+  "homepage": "https://github.com/mo-amir-code/botaddons-cron#readme",
+  "description": ""
+}
